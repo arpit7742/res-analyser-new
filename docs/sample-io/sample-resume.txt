@@ -1,0 +1,3 @@
+4 years full-stack development. Built React SPAs with TypeScript for 3 years.
+Node.js + Express REST APIs for 2 years. Basic PostgreSQL queries. No Docker
+or AWS experience. Used GitHub Actions for simple CI.

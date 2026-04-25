@@ -1,0 +1,38 @@
+{
+  "scores": [
+    { "skill": "React", "score": 74, "reasoning": "Strong component architecture knowledge, gaps in advanced performance optimization and concurrent features.", "keyEvidence": ["Explained component lifecycle well", "Unclear on React.memo optimization"] },
+    { "skill": "TypeScript", "score": 68, "reasoning": "Good everyday usage, limited understanding of advanced generics and utility types.", "keyEvidence": ["Solid interface usage", "Struggled with conditional types"] },
+    { "skill": "Node.js + Express", "score": 61, "reasoning": "Solid REST API building, gaps in middleware patterns and error handling strategies.", "keyEvidence": ["Built REST APIs", "Limited async error handling knowledge"] },
+    { "skill": "PostgreSQL", "score": 35, "reasoning": "Basic CRUD queries only, no knowledge of indexing, joins optimization, or migrations.", "keyEvidence": ["Basic SELECT/INSERT", "No indexing knowledge"] },
+    { "skill": "Docker", "score": 10, "reasoning": "Awareness only, no hands-on experience with Dockerfiles or compose.", "keyEvidence": ["Heard of Docker", "Never written a Dockerfile"] },
+    { "skill": "AWS (S3, Lambda)", "score": 5, "reasoning": "No practical experience demonstrated.", "keyEvidence": ["No AWS experience"] }
+  ],
+  "gaps": [
+    { "skill": "React", "severity": "none", "delta": -11, "requiredLevel": 85, "actualScore": 74 },
+    { "skill": "TypeScript", "severity": "minor", "delta": -17, "requiredLevel": 85, "actualScore": 68 },
+    { "skill": "Node.js + Express", "severity": "minor", "delta": -9, "requiredLevel": 70, "actualScore": 61 },
+    { "skill": "PostgreSQL", "severity": "major", "delta": -25, "requiredLevel": 60, "actualScore": 35 },
+    { "skill": "Docker", "severity": "major", "delta": -30, "requiredLevel": 40, "actualScore": 10 },
+    { "skill": "AWS (S3, Lambda)", "severity": "major", "delta": -35, "requiredLevel": 40, "actualScore": 5 }
+  ],
+  "learningPlan": [
+    {
+      "skill": "Docker",
+      "resources": [
+        { "title": "Docker Getting Started (Official)", "url": "https://docs.docker.com/get-started/", "type": "documentation" },
+        { "title": "Docker for Node.js Best Practices", "url": "https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md", "type": "tutorial" }
+      ],
+      "hoursEstimate": 12,
+      "adjacentLeverage": "You already deploy Node.js apps — Docker just wraps that process. Start by containerizing one of your Express APIs."
+    },
+    {
+      "skill": "AWS (S3, Lambda)",
+      "resources": [
+        { "title": "AWS Free Tier + Lambda Tutorial", "url": "https://aws.amazon.com/getting-started/hands-on/run-serverless-code/", "type": "free_course" },
+        { "title": "Serverless Express on Lambda", "url": "https://github.com/vendia/serverless-express", "type": "project" }
+      ],
+      "hoursEstimate": 18,
+      "adjacentLeverage": "Your Express knowledge maps directly to Lambda — use serverless-express to deploy your existing APIs as Lambda functions."
+    }
+  ]
+}

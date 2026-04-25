@@ -1,0 +1,3 @@
+Senior Full-Stack Engineer — Expert in React and TypeScript, proficient in Node.js
+and Express, experienced with PostgreSQL, familiar with Docker and CI/CD pipelines,
+knowledge of AWS services (S3, Lambda).
