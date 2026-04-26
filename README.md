@@ -1,4 +1,4 @@
-# SkillProbe — AI-Powered Skill Assessment & Learning Plan
+SkillProbe — AI-Powered Skill Assessment & Learning Plan
 
 An AI agent that takes a Job Description and a candidate's resume, conversationally assesses real proficiency on each required skill, identifies gaps, and generates a personalised learning plan with curated resources and time estimates.
 
@@ -9,9 +9,19 @@ An AI agent that takes a Job Description and a candidate's resume, conversationa
      (Vercel)           (Render)           (Google AI)
 ```
 
+## Architecture digram
+
+<img width="1440" height="1640" alt="image" src="https://github.com/user-attachments/assets/88defed5-f8bf-45aa-a5f0-04447d236697" />
+
+
 **Agent Pipeline:** Skill Extractor → Assessor (3-5 Q&A per skill) → Scorer → Gap Analyzer → Learning Planner
 
 See [docs/architecture.md](docs/architecture.md) for detailed scoring logic.
+
+## Agentic pipline architecture
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/aaecfa3f-a466-42d6-9c23-1b2b7924ab3d" />
+
 
 ## 🚀 Local Setup
 
